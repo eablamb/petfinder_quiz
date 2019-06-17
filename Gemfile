@@ -63,6 +63,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  # Library for stubbing and setting expectations on HTTP requests
+  gem 'webmock', '~> 3.6.0'
   # Easy stubs for external API requests
   gem 'vcr', '~> 5.0.0'
 end
