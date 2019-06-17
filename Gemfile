@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Makes http fun again!
 gem 'httparty', '~> 0.17.0'
 
+# Multi-environment settings
+gem 'config', '~> 1.7.0'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
