@@ -13,6 +13,11 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+# Require every ruby file inside the spec/support directory, and
+# subdirectories, so that they can be used in your tests.
+Dir['./spec/support/**/*.rb'].each { |f| require f }
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
