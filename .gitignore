@@ -8,9 +8,12 @@ capybara-*.html
 /public/system
 /coverage/
 /spec/tmp
+/spec/fixtures/vcr/*.yml
 *.orig
 rerun.txt
 pickle-email-*.html
+*.swp
+*.swo
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
@@ -47,3 +50,7 @@ bower.json
 # Ignore node_modules
 node_modules/
 
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
