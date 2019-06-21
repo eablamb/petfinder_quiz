@@ -3,10 +3,12 @@ class CatsController < ApplicationController
   before_action :validate_answers, only: [:match]
 
   def match
+    @title = "Petfinder Results"
     @matches = CatMatcher.matches params: cat_params
   end
 
   def quiz
+    @title = "Petfinder Quiz"
     @quiz = Quiz.new
   end
 

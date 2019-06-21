@@ -1,11 +1,3 @@
-<h1>Petfinder Quiz</h1>
-
-<% flash.each do |key, value| %>
-  <div class="<%= flash_class(key) %>">
-    <%= value %>
-  </div>
-<% end %>
-
 <%= form_tag("/cats", method: "get") do %>
   <% @quiz.questions.each_with_index do |question, index| %>
     <div>
