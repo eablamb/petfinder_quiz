@@ -1,7 +1,7 @@
 class CatFinder
 
   include HTTParty
-  base_uri 'api.petfinder.com/v2'
+  base_uri 'https://api.petfinder.com/v2'
 
   def self.adoptable_cats
     new.adoptable_cats
